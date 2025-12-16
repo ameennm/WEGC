@@ -4,7 +4,7 @@
 
 const SUPABASE_URL = 'https://misbpisiyxsyxkwhttxh.supabase.co';
 const SUPABASE_ANON_KEY = 'sb_publishable_MthEVIBk0iRKcuHvVy5Mlg_o0GMMFsB';
-const ADMIN_PASSWORD = 'WEGC0928cbbee#'; // Change this to your secure password
+const ADMIN_PASSWORD = 'WEGC0928cbbee';
 
 let supabase;
 
