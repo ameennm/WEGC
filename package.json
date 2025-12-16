@@ -1,0 +1,28 @@
+{
+    "name": "wegc-certificate-system",
+    "version": "1.0.0",
+    "description": "Women's Education and Guidance Council - Certificate Verification and Management System",
+    "main": "index.html",
+    "scripts": {
+        "dev": "echo 'Opening in browser...' && start index.html",
+        "deploy": "vercel --prod"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/yourusername/wegc-certificate-system.git"
+    },
+    "keywords": [
+        "certificate",
+        "verification",
+        "education",
+        "women",
+        "supabase",
+        "vercel"
+    ],
+    "author": "Women's Education and Guidance Council",
+    "license": "MIT",
+    "dependencies": {
+        "@supabase/supabase-js": "^2.39.0"
+    },
+    "devDependencies": {}
+}
