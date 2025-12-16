@@ -13,7 +13,6 @@ CREATE TABLE IF NOT EXISTS certificates (
     course_name VARCHAR(255) NOT NULL,
     duration VARCHAR(50) NOT NULL,
     institution_name VARCHAR(255) NOT NULL,
-    issue_date DATE NOT NULL,
     created_at TIMESTAMP WITH TIME ZONE DEFAULT TIMEZONE('utc'::text, NOW()) NOT NULL,
     updated_at TIMESTAMP WITH TIME ZONE DEFAULT TIMEZONE('utc'::text, NOW()) NOT NULL
 );

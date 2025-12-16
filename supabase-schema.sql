@@ -17,7 +17,6 @@ CREATE TABLE certificates (
     course_name VARCHAR(255) NOT NULL,
     duration VARCHAR(50) NOT NULL,
     institution_name VARCHAR(255) NOT NULL,
-    issue_date DATE NOT NULL,
     created_at TIMESTAMP WITH TIME ZONE DEFAULT TIMEZONE('utc'::text, NOW()) NOT NULL,
     updated_at TIMESTAMP WITH TIME ZONE DEFAULT TIMEZONE('utc'::text, NOW()) NOT NULL
 );
@@ -59,13 +58,13 @@ CREATE TRIGGER update_certificates_updated_at
     EXECUTE FUNCTION update_updated_at_column();
 
 -- Insert sample data for testing
-INSERT INTO certificates (certificate_number, student_name, course_name, duration, institution_name, issue_date)
+INSERT INTO certificates (certificate_number, student_name, course_name, duration, institution_name)
 VALUES
-    ('WEGC2025001', 'Priya Sharma', 'Women Leadership Development', '6 Months', 'WEGC Delhi Center', '2025-01-15'),
-    ('WEGC2025002', 'Anjali Verma', 'Professional Skill Enhancement', '3 Months', 'WEGC Mumbai Center', '2025-02-20'),
-    ('WEGC2025003', 'Kavita Singh', 'Entrepreneurship for Women', '12 Months', 'WEGC Bangalore Center', '2024-12-10'),
-    ('WEGC2025004', 'Neha Gupta', 'Digital Marketing Certification', '6 Months', 'WEGC Chennai Center', '2025-01-05'),
-    ('WEGC2025005', 'Sunita Patel', 'Financial Literacy Program', '3 Months', 'WEGC Pune Center', '2025-02-01');
+    ('WEGC2025001', 'Priya Sharma', 'Women Leadership Development', '6 Months', 'WEGC Delhi Center'),
+    ('WEGC2025002', 'Anjali Verma', 'Professional Skill Enhancement', '3 Months', 'WEGC Mumbai Center'),
+    ('WEGC2025003', 'Kavita Singh', 'Entrepreneurship for Women', '12 Months', 'WEGC Bangalore Center'),
+    ('WEGC2025004', 'Neha Gupta', 'Digital Marketing Certification', '6 Months', 'WEGC Chennai Center'),
+    ('WEGC2025005', 'Sunita Patel', 'Financial Literacy Program', '3 Months', 'WEGC Pune Center');
 
 -- ==========================================
 -- ADDITIONAL HELPFUL QUERIES
