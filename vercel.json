@@ -10,14 +10,10 @@
       "use": "@vercel/node"
     }
   ],
-  "routes": [
+  "rewrites": [
     {
-      "src": "/api/keep-alive",
-      "dest": "api/keep-alive.js"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
+      "source": "/api/keep-alive",
+      "destination": "/api/keep-alive.js"
     }
   ],
   "crons": [
